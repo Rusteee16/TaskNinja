@@ -40,21 +40,24 @@ footer p {
 }
 
 .note {
-  background: #F1FAEE;
+  background: #A8DADC;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
+  padding: 7px;
   width: 240px;
-  margin: 16px;
+  margin: 10px;
   float: left;
 }
 
 .note h1 {
+  color:#1D3557;
   font-size: 1.1em;
   margin-bottom: 6px;
 }
 
 .note p {
+  color: #1D3557;
+  padding: 10px;
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
@@ -65,7 +68,8 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #1D3557;
+  background-color: #A8DADC;
+  color: #E63946;
   border: none;
   width: 36px;
   height: 36px;
@@ -76,7 +80,7 @@ footer p {
 form.create-note {
   position: relative;
   width: 480px;
-  margin: 30px auto 20px auto;
+  margin: 50px auto 30px auto;
   background: #fff;
   padding: 15px;
   border-radius: 7px;
@@ -88,6 +92,8 @@ form.create-note textarea {
   width: 100%;
   border: none;
   padding: 4px;
+  background-color: #fff;
+  color: #1D3557;
   outline: none;
   font-size: 1.2em;
   font-family: inherit;
@@ -99,7 +105,7 @@ form.create-note button {
   right: 18px;
   bottom: -18px;
   background: #1D3557;
-  color: #F1FAEE;
+  color: #A8DADC;
   border: none;
   border-radius: 50%;
   width: 36px;
@@ -107,4 +113,96 @@ form.create-note button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+/* ###################todolist styling #########################################*/
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #A8DADC;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #1D3557;
+  text-align: center;
+}
+
+.item {
+  background-color: #A8DADC;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1FAEE;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #1D3557;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #1D3557;
+}
+
+.item {
+  background-color: #A8DADC;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.addButton {
+  right: 18px;
+  bottom: -18px;
+  font-size: 30px;
+  background: #1D3557;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="text"] {
+  background-color: #A8DADC;
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 305px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #1D3557;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
 }
